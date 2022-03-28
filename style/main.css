@@ -149,7 +149,7 @@ body {
 } 
 .visual {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 20px;
     max-width: 790px;
     z-index: -1;
@@ -361,7 +361,7 @@ h3 {
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .schedule-grid-item:hover {
     border: 1px solid rgba(43, 53, 65, 1);
@@ -449,7 +449,7 @@ h3 {
     max-height: 98px;
     padding-top: 0;
 }
-.mailing {
+.mail {
     margin-top: 153px;
     background-color: #F3F3F3;
     width: 100%;
@@ -458,7 +458,7 @@ h3 {
     padding-top: 86px;
     text-align: center;
 }
-.mailing-title {
+.mail-title {
     font-weight: 700;
     color: #2B3541;
     text-align: center;
@@ -467,7 +467,7 @@ h3 {
     display: inline-block; 
     margin: 0 auto;
 }
-.mailing h3::before {
+.mail h3::before {
     position: absolute;
     content: '';
     background-color: #FBF138;
@@ -479,7 +479,7 @@ h3 {
     top: -23px;
     left: -32px;
 }
-.mailing-box {
+.mail-box {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -487,13 +487,13 @@ h3 {
     margin: 39px auto 0;
     max-width: 600px;
 }
-.mailing-form {
+.mail-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     flex-grow: 1;
 }
-.mailing-form input {
+.mail-form input {
     font-family: 'Montserrat', sans-serif;
     padding: 21px 132px;
     font-size: 18px;
@@ -505,24 +505,40 @@ h3 {
     letter-spacing: 1.2px;
     cursor: pointer;
 }
-.mailing-form input:hover {
+.mail-form input:hover {
     background-color: #F3F3F3;
 }
-.mailing-form input:focus {
+.mail-form input:focus {
     outline: none;
     background-color: #fff;
 }
-.mailing-form p {
+.mail-form p {
     display: none;
+}
+.email::-webkit-input-placeholder {
+    color: rgba(43, 53, 65, .3);
+    border: none;
+}
+.email::-moz-placeholder {
+    color: rgba(43, 53, 65, .3);
+    border: none;
+}
+.email:-ms-input-placeholder {
+    color: rgba(43, 53, 65, .3);
+    border: none;
+}
+.email::-ms-input-placeholder {
+    color: rgba(43, 53, 65, .3);
+    border: none;
 }
 .email::placeholder {
     color: rgba(43, 53, 65, .3);
     border: none;
 }
-.mailing-form input:invalid {
+.mail-form input:invalid {
     border-color: red;
 }
-.mailing-button {
+.mail-button {
     background-color: #FBF138;
     color: #2B3541;
     font-size: 16px;
@@ -536,7 +552,7 @@ h3 {
     transition: .3s;
     font-family: 'Montserrat', sans-serif;
 }
-.mailing-button:hover {
+.mail-button:hover {
     background-color: #2B3541;
     color: #FBF138;
     box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
@@ -966,6 +982,22 @@ h3 {
     border: none;
     width: calc(100% - 100px);  
 }
+.modal-email::-webkit-input-placeholder, .modal-tel::-webkit-input-placeholder {
+    color: rgba(43, 53, 65, .3);
+    letter-spacing: 1.2px;
+}
+.modal-email::-moz-placeholder, .modal-tel::-moz-placeholder {
+    color: rgba(43, 53, 65, .3);
+    letter-spacing: 1.2px;
+}
+.modal-email:-ms-input-placeholder, .modal-tel:-ms-input-placeholder {
+    color: rgba(43, 53, 65, .3);
+    letter-spacing: 1.2px;
+}
+.modal-email::-ms-input-placeholder, .modal-tel::-ms-input-placeholder {
+    color: rgba(43, 53, 65, .3);
+    letter-spacing: 1.2px;
+}
 .modal-email::placeholder, .modal-tel::placeholder {
     color: rgba(43, 53, 65, .3);
     letter-spacing: 1.2px;
@@ -997,7 +1029,7 @@ h3 {
     .header-nav {
         gap: 3vw;
     }
-    .wrapper {
+    .banner {
         padding-bottom: 7vw;
     }
     .visual {
@@ -1032,11 +1064,11 @@ h3 {
     .event-flex-active {
         font-size: 12px;
     }
-    .mailing {
+    .mail {
         margin-top: 12vw;
         margin-bottom: 12vw;
     }
-    .mailing h3::before {
+    .mail h3::before {
         width: 31px;
         height: 31px;
         top: -10px;
@@ -1087,7 +1119,7 @@ h3 {
 
 @media (max-width: 940px) {
 
-    .wrapper {
+    .banner {
         padding-top: 30px;
     }
     .visual {
@@ -1176,20 +1208,20 @@ h3 {
     .header-burger {
         display: block;
     }
-    .social {
+    .social-media {
         gap: 19px;
     }
-    .social-inst {
+    .social-media-in {
         width: 26px;
         height: 26px;
         opacity: 1;
     }
-    .social-fb {
+    .social-media-fb {
         width: 26px;
         height: 26px;
         opacity: 1;
     }
-    .wrapper {
+    .banner {
         padding-top: 20px;
     }
     .content {
@@ -1302,25 +1334,25 @@ h3 {
     .schedule-grid-text {
         font-size: 12px;
     }
-    .mailing-title {
+    .mail-title {
        max-width: 201px;
     }
-    .mailing {
+    .mail {
         padding-top: 58px;
         padding-bottom: 38px;
         margin-top: 95px;
         margin-bottom: 93px;
     }
-    .mailing-box {
+    .mail-box {
         flex-direction: column;
         align-items: center;
         gap: 47px;
         margin: 49px auto 0;
     }
-    .mailing-form {
+    .mail-form {
         gap: 15px;
     }
-    .mailing-button {
+    .mail-button {
         padding: 22px 113px;
     }
     .about-cover {
@@ -1381,4 +1413,329 @@ h3 {
         font-size: 10px;
     }  
 }
- 
+@media (max-width: 605px) {
+
+    .header {
+        padding-bottom: 38px;
+    }
+    .header-menu {
+       gap: 57px;
+   }
+    .button-down {
+        display: none;
+    }
+    .banner {
+        flex-direction: column;
+        align-self: center;
+        gap: 40px;
+        padding-bottom: 0;
+        max-width: 100%;
+    }
+    .content {
+        max-width: 100%;
+    }
+    .content-title {
+        letter-spacing: .6px;
+        max-width: 360px;
+        width: 100%;
+    }
+    .content-info {
+        max-width: 100%;
+    }
+    .content-bnt {
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 22px 0;
+    }
+    .visual {
+       position: relative;
+        margin: 0 auto;
+        top: 0;
+        display: flex;
+    }
+    .gradient-left {
+        height: 310px;
+        width: 100%;
+        max-width: 213px;
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+    }
+    .gradient-right {
+        max-width: 117px;
+        height: 310px;
+        width: 100%;
+        height: 310px;
+        position: absolute;
+    }
+    .girl-pic-mobile {
+        position: inherit;
+        margin: 0 auto;
+        max-width: 93vw;
+    }
+    .event {
+        margin-top: 82px;
+    }
+    .event-flex {
+        gap: 10px;
+    }
+    .event-flex-date {
+        font-size: 12px;
+        top: -2px;
+        left: 20px;
+    }
+    .event-flex-title {
+        font-size: 16px;
+        top: 25px;
+        left: 20px;
+    }
+    .schedule {
+        margin-top: 55px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    .schedule-title h3 {
+        margin-bottom: 16px;
+    }
+     .schedule-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .schedule-grid-item {
+        flex-direction: row;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 0;
+        padding: 0;
+        min-height: 114px;
+    }
+    .schedule-grid .schedule-grid-item:nth-child(2) {
+        height: 206px;
+    }
+    .schedule-grid-item img {
+        width: 39px;
+        height: 39px;
+        margin-top: 54px;
+        margin-left: 17px;
+    }
+    .schedule-grid-item:nth-child(2) img {
+        width: 34px;
+        height: 53px;
+        margin-top: 97px;
+    } 
+    .schedule-grid-item:nth-child(3) img {
+        width: 23px;
+        height: 45px;
+    }
+    .schedule-grid-item:nth-child(4) img {
+        width: 39px;
+        height: 37px;
+    }
+    .schedule-grid-item:nth-child(5) img {
+        width: 46px;
+        height: 25px;
+    }
+    .schedule-grid-item:nth-child(6) img {
+        width: 35px;
+        height: 40px;
+    }
+    .schedule-grid-date {
+        font-size: 16px;
+        top: 8px;
+        right: 20px;
+    }
+    .schedule-grid-box {
+        margin-left: 20px;
+    }
+    .schedule-grid-title {
+        margin-top: 65px; 
+        font-size: 16px; 
+    }
+    .schedule-grid-item:nth-child(2) .schedule-grid-title {
+        margin-top: 10px;
+        
+    }
+    .schedule-grid-item:nth-child(2) .schedule-grid-box {
+        position: absolute;
+        top: 90px;
+        left: 58px;
+    }
+    .schedule-grid-text {
+        max-width: 235px;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 16px;
+    }
+    .mail {
+        margin-top: 82px;
+        margin-bottom: 77px;
+        padding-top: 3px;
+    }
+    .mail-title {
+        padding: 56px 0 0;
+        max-width: 201px;
+        margin: 0 auto;
+    }
+    .mail h3::before {
+        width: 31px;
+        height: 31px;
+        top: 41px;
+        left: -14px;
+    }
+    .mail-form {
+        width: 100%;
+    }
+    .mail-form input {
+        font-size: 18px;
+        padding: 20px;
+    }
+    .mail-button {
+        width: 100%;
+        padding: 22px 75px;
+        font-size: 16px;
+    }
+    .company-title {
+        font-size: 26px;
+        padding-bottom: 0;
+    }
+    .company-text {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .company-flexmob {
+        display: grid;
+        flex-direction: column;
+        gap: 3px;
+        margin-bottom: 30px;
+    }
+    .company-flex-title {
+        font-size: 16px;
+    }
+    .company-flex-text {
+        font-size: 16px;
+    }
+    .company-container {
+        display: grid;
+        text-align: start;
+    }
+    .company-cover {
+        flex-direction: column;
+        gap: 10vw;
+    }
+    .company-flex {
+        display: none;
+    }
+    .company-content button {
+        font-size: 16px;
+        padding: 22px 75px;
+        width: 100%;
+        letter-spacing: 0;
+    }
+    .company-visual {
+        max-width: 100%;
+    }
+    .company-visual img {
+        max-width: 100%;
+    }
+    .footer {
+        padding: 11vw 0 6vw;
+    }
+    .footer-menu {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 0;
+    }
+    .footer-nav {
+        justify-content: space-between;
+        gap: 13.5vw;
+        padding: 0;
+    }
+    .footer-nav a {
+        font-size: 12px;
+    }
+    .footer-contact {
+        justify-content: space-between;
+    }
+    .footer-mail a {
+        font-size: 12px;
+    }
+    .footer-mail a::before {
+        width: 20px;
+        height: 20px;
+        top: -12px;
+        left: -7px;
+    }
+    .footer-text {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-text p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .event-flex-cover:first-child .event-mob {
+        bottom: 1px;   
+    }
+}
+@media (max-width: 359px) {
+    .content-title {
+        font-size: 22px;
+    }
+}
+@media (max-width: 326px) {
+
+    .social-media-in, .social-media-fb {
+        width: 23px;
+        height: 23px;
+    }
+    .content-title {
+        font-size: 22px;
+        letter-spacing: 0;
+    }
+    .content-subtitle {
+        font-size: 21px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .event-flex-title {
+        font-size: 10px;
+    }
+    .event-flex-cover:first-child, .event-flex-cover:nth-child(2) {
+        width: 42vw;
+    }
+    .event-flex-cover:nth-child(3) {
+        width: 90vw;
+    }
+    .event-mob {
+        width: 27px;
+        height: 27px;
+    }
+    .event-flex-link {
+        font-size: 10px;
+    }
+    .schedule-grid .schedule-grid-item:nth-child(2) {
+        height: 260px;
+    }
+    .schedule-grid-item:nth-child(2) .schedule-grid-title {
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    .checkbox:checked + label, .checkbox:not(:checked) + label {
+        font-size: 9px;
+    }
+    .footer-nav {
+        gap: 10vw;
+    }
+    .footer-nav a{
+        font-size: 10px;
+    }
+    .footer-fb, .footer-inst {
+        width: 23px;
+        height: 23px;
+    }
+}
