@@ -71,7 +71,7 @@ body {
     width:30px;
     height: 30px;
     cursor: pointer; 
-    transition: .5s;
+    transition: .3s;
     transform: scale(1);
     opacity: .8;
 }
@@ -859,7 +859,7 @@ h3 {
     top: -400px;
     left: 0;
     right: 0;
-    transition: .5s;
+    transition: .3s;
     padding: 30px 10px 15px;
     box-sizing: border-box;
 }
@@ -921,7 +921,7 @@ h3 {
     left: 50%; 
     top: 50%;
     transform: translate(-50%, -50%) ;
-    transition: 0.5s;
+    transition: 0.3s;
     box-sizing: border-box;   
 }
 .modal-close {
