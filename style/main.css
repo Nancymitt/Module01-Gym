@@ -510,6 +510,7 @@ h3 {
     background-color: #fff;
     border: 1px solid #FBF138;
     outline: none;
+    transition: .3s;
 }
 .mail-form input:active {
     background-color: #fff;
@@ -530,11 +531,13 @@ h3 {
     display: none;
 }
 .email:invalid {
-    border: 1px solid #AE0303
+    border: 1px solid #AE0303;
+    transition: .3s;
     
 }
 .email:valid {
-    border: none    
+    border: none;
+    transition: .3s;  
 }
 .mail-button {
     background-color: #FBF138;
