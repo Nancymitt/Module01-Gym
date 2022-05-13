@@ -495,6 +495,7 @@ h3 {
     flex-grow: 1;
 }
 .mail-form input {
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     padding: 21px 132px;
     font-size: 18px;
@@ -506,37 +507,34 @@ h3 {
     letter-spacing: 1.2px;
 }
 .mail-form input:hover {
-    background-color: #F3F3F3;
+    background-color: #fff;
+    border: 1px solid #FBF138;
+    outline: none;
+}
+.mail-form input:active {
+    background-color: #fff;
+    border: 1px solid #FBF138;
+    outline: none;
 }
 .mail-form input:focus {
     outline: none;
     background-color: #fff;
+    border: 1px solid #FBF138;
+}
+.mail-form input:focus-visible {
+    outline: none;
+    background-color: #fff;
+    border: 1px solid #FBF138;
 }
 .mail-form p {
     display: none;
 }
-.email::-webkit-input-placeholder {
-    color: rgba(43, 53, 65, .3);
-    border: none;
+.email:invalid {
+    border: 1px solid #AE0303
+    
 }
-.email::-moz-placeholder {
-    color: rgba(43, 53, 65, .3);
-    border: none;
-}
-.email:-ms-input-placeholder {
-    color: rgba(43, 53, 65, .3);
-    border: none;
-}
-.email::-ms-input-placeholder {
-    color: rgba(43, 53, 65, .3);
-    border: none;
-}
-.email::placeholder {
-    color: rgba(43, 53, 65, .3);
-    border: none;
-}
-.mail-form input:invalid {
-    border-color: red;
+.email:valid {
+    border: none    
 }
 .mail-button {
     background-color: #FBF138;
