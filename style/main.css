@@ -228,7 +228,7 @@ h3 {
     width: 100%;
 }
 .event-flex-cover:nth-child(3) {
-    background-image: url(../images/vebinar2.png);
+    background-image: url(../images/Vebinar2.png);
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
@@ -504,7 +504,6 @@ h3 {
     text-align: start;
     padding-left: 20px;
     letter-spacing: 1.2px;
-    cursor: pointer;
 }
 .mail-form input:hover {
     background-color: #F3F3F3;
@@ -818,7 +817,11 @@ h3 {
     transform: scale(1);
     opacity: .8;
 }
-.footer-inst:hover, .footer-fb:hover {
+.footer-in:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+.footer-fb:hover {
     transform: scale(1.2);
     opacity: 1;
 }
