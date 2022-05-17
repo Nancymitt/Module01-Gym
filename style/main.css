@@ -506,38 +506,33 @@ h3 {
     padding-left: 20px;
     letter-spacing: 1.2px;
 }
-.mail-form input:hover {
-    background-color: #fff;
-    border: 1px solid #FBF138;
-    outline: none;
-    transition: .3s;
-}
 .mail-form input:active {
     background-color: #fff;
-    border: 1px solid #FBF138;
+    box-shadow: inset 0px 0px 0px 1px #FBF138;
     outline: none;
+    transition: .3s;
 }
 .mail-form input:focus {
     outline: none;
     background-color: #fff;
-    border: 1px solid #FBF138;
+    box-shadow: inset 0px 0px 0px 1px #FBF138;
+    transition: .3s;
 }
 .mail-form input:focus-visible {
     outline: none;
     background-color: #fff;
-    border: 1px solid #FBF138;
+    box-shadow: inset 0px 0px 0px 1px #FBF138;
+    transition: .3s;
 }
 .mail-form p {
     display: none;
 }
 .email:invalid {
-    border: 1px solid #AE0303;
-    transition: .3s;
-    
+    box-shadow: inset 0px 0px 0px 1px #AE0303;
+    transition: .3s;    
 }
 .email:valid {
-    border: none;
-    transition: .3s;  
+    border: none;  
 }
 .mail-button {
     background-color: #FBF138;
