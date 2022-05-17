@@ -506,6 +506,13 @@ h3 {
     padding-left: 20px;
     letter-spacing: 1.2px;
 }
+.mail-form input:hover {
+    background-color: #fff;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+    outline: none;
+    transition: .3s;
+
+}
 .mail-form input:active {
     background-color: #fff;
     box-shadow: inset 0px 0px 0px 1px #FBF138;
